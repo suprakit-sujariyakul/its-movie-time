@@ -1,3 +1,4 @@
+import { Cagliostro } from '@next/font/google';
 import Movie from './Movie';
 
 export default async function Home() {
@@ -9,7 +10,7 @@ export default async function Home() {
   return (
     <main>
       <div className='grid gap-16 grid-cols-fluid'>
-        {res?.results?.map((movie) => (
+        {res.results?.map((movie) => (
           <Movie
             key={movie.id}
             id={movie.id}
